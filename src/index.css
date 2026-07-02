@@ -1,0 +1,252 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(135deg, #e6f0ff 0%, #ffffff 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.7rem;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/backgroud.png") no-repeat center/cover;
+  z-index: -1; /* push behind content */
+  opacity: 0.6;
+  overflow-y: hidden;
+}
+
+.portfolio {
+  min-width: 80rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 2rem;
+}
+.profile-img {
+  width: 18%;
+  object-fit: cover;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+
+  transform: scale(1.3);
+  filter: drop-shadow(0 0 4px rgba(95, 213, 111, 0.6));
+
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 25rem;
+  text-transform: uppercase;
+  color: #073272;
+  font-style: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  line-height: 0;
+}
+
+h2 {
+  line-height: 0;
+  color: #3c70be;
+}
+
+p {
+  line-height: 2;
+  color: #3c70be;
+  font-style: bold;
+}
+
+.about {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8); /* subtle card effect */
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+
+  position: relative;
+}
+
+.about h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 80%; /* underline length */
+  height: 1px; /* underline thickness */
+  background-color: #0077cc; /* underline color */
+  border-radius: 2px;
+}
+
+.about p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.specialties {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.specialties h3 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  position: relative;
+}
+
+.specialties h3::before,
+.specialties h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100%; /* length of each line */
+  height: 1px; /* thickness */
+  background-color: #0077cc; /* line color */
+  border-radius: 2px;
+}
+
+.specialties h3::before {
+  right: 100%; /* place to the left */
+  margin-right: 10px; /* spacing from text */
+}
+
+.specialties h3::after {
+  left: 100%; /* place to the right */
+  margin-left: 10px; /* spacing from text */
+}
+
+.specialties-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.connect-card {
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: rgba(231, 222, 222, 0.15); /* glass effect */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.connect-left {
+  max-width: 300px;
+}
+
+.connect h3 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1rem;
+}
+
+.connect p {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.scan-btn {
+  padding: 0.8rem 1.6rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #333;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+/* Brand hover colors */
+.socials .facebook:hover {
+  color: #1877f2;
+}
+.socials .linkedin:hover {
+  color: #0077b5;
+}
+.socials .youtube:hover {
+  color: #ff0000;
+}
+.socials .email:hover {
+  color: #d93025;
+}
+
+.qr {
+  width: 12rem;
+}
