@@ -1,5 +1,5 @@
 import lyn from "./assets/lyn.png";
-import qr from "./assets/qr.png";
+import vmuf from "./assets/vmuf.png";
 
 const App = () => {
   return (
@@ -54,7 +54,7 @@ const App = () => {
             </div>
           </div>
           <div className="connect-right">
-            <img src={qr} alt="QR Code" className="qr" />
+            <img src={vmuf} alt="QR Code" className="qr" />
           </div>
         </div>
       </section>
