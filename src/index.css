@@ -273,10 +273,14 @@ p {
   .profile-img {
     width: 50%; /* bigger profile image on small screens */
     transform: scale(1); /* remove extra scaling */
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 
   h1 {
-    position: static; /* no absolute positioning */
     font-size: 2.4rem;
     line-height: 1.2;
     margin-top: 1rem;
@@ -284,11 +288,13 @@ p {
 
   h2 {
     font-size: 1.8rem;
+    line-height: 1;
   }
 
   p {
     font-size: 1.4rem;
     line-height: 1.4;
+    text-align: center;
   }
 
   .about {
