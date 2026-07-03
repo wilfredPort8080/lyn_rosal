@@ -1,5 +1,8 @@
 import lyn from "./assets/lyn.png";
 import vmuf from "./assets/vmuf.png";
+import email from "./assets/email.svg";
+import facebook from "./assets/facebook.svg";
+import linkedin from "./assets/linkedin.svg";
 
 const App = () => {
   return (
@@ -40,21 +43,18 @@ const App = () => {
             <button className="scan-btn">Scan QR Code</button>
             <div className="socials">
               <a href="mailto:lyn@example.com" className="email">
-                📧
+                <img src={email} alt="email" />
               </a>
               <a href="https://facebook.com/lynrosal" className="facebook">
-                📘
+                <img src={facebook} alt="facebook" />
               </a>
               <a href="https://linkedin.com/in/lynrosal" className="linkedin">
-                🔗
-              </a>
-              <a href="https://youtube.com/@lynrosal" className="youtube">
-                ▶️
+                <img src={linkedin} alt="linkedin" />
               </a>
             </div>
           </div>
           <div className="connect-right">
-            <img src={vmuf} alt="QR Code" className="qr" />
+            <img src={vmuf} alt="vmuf logo" className="qr" />
           </div>
         </div>
       </section>
