@@ -1,0 +1,94 @@
+.about {
+  justify-content: center;
+  max-width: 60rem;
+
+  margin: 5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(095, 213, 111, 0.6);
+  position: relative;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about {
+    max-width: 65%;
+    padding: 1.5rem;
+  }
+}
+.about h3 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.about p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about h3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background-color: #0077cc;
+  border-radius: 2px;
+}
+
+.btnAbout {
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+
+  padding-left: 0.5rem;
+}
+
+.btnAbout button {
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: inherit;
+  position: relative;
+  border-top: 1px solid rgba(95, 213, 111, 1);
+  color: #0077cc;
+  transition: all 0.7s;
+}
+
+.btnAbout button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%; /* only half height */
+  width: 1px; /* thickness of glow */
+  background-color: rgba(95, 213, 111, 1);
+}
+
+.btnAbout button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%; /* only half height */
+  width: 1px; /* thickness of glow */
+  background: rgba(95, 213, 111, 1);
+}
+
+.btnAbout button.active {
+  background-color: rgba(095, 213, 111, 0.7);
+  color: #fff;
+  transform: translateY(-0.5rem);
+}

@@ -1,0 +1,87 @@
+.footer {
+  display: flex;
+
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 13rem;
+  padding: 2rem;
+  background-color: rgba(231, 222, 222, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  max-width: 60rem;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    max-width: 90%;
+  }
+}
+
+.connectL {
+  max-width: 60rem;
+}
+.footer h3 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .socials {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.socials a img {
+  width: 2.4rem;
+  height: 2.5rem;
+}
+
+.socials a {
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.connectL button {
+  padding: 0.8rem 1.6rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.vmuf {
+  width: 12rem;
+}
