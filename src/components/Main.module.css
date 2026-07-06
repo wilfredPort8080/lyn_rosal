@@ -8,6 +8,12 @@
   position: relative;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .portfolio {
+    margin-top: 7rem;
+  }
+}
+
 .portfolio img {
   width: 18%;
   object-fit: cover;
@@ -29,6 +35,13 @@
   .portfolio img {
     transform: scale(1.5);
     filter: drop-shadow(0 0 4px #5fd56f99);
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .portfolio img {
+    transform: scale(2.3);
+    filter: drop-shadow(0 0 2px #5fd56f99);
   }
 }
 
@@ -70,4 +83,20 @@
   word-spacing: -1rem;
   text-transform: uppercase;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .custom h1 {
+    word-spacing: 0;
+    font-size: 3rem;
+  }
+  .custom h2 {
+    word-spacing: 0;
+    font-size: 2rem;
+  }
+
+  .custom p {
+    word-spacing: 0;
+    font-size: 1.5rem;
+  }
 }

@@ -16,6 +16,13 @@
     padding: 1.5rem;
   }
 }
+
+@media only screen and (max-width: 31.25em) {
+  .about {
+    margin-top: 8rem;
+    max-width: 81%;
+  }
+}
 .about h3 {
   font-size: 2rem;
   color: #004aad;
