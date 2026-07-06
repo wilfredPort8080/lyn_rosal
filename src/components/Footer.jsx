@@ -10,7 +10,7 @@ const Footer = () => {
       <div className={styles.card}>
         <div className={styles.connectL}>
           <h3>Let's Connect</h3>
-          <p>Scan the QR code to access my resume & contact info.</p>
+          <p>Click the Link contact info.</p>
           <button>Scan QR Code</button>
           <div className={styles.socials}>
             <a href="www.google.com" target="_blank">
