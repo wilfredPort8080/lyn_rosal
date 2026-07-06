@@ -75,7 +75,7 @@
 .connectL button {
   padding: 0.8rem 1.6rem;
   background-color: #0077cc;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -84,4 +84,16 @@
 
 .vmuf {
   width: 12rem;
+}
+
+.connectL div a:visited,
+.connectL div a:link {
+  text-decoration: none;
+  color: #0077cc;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.connectL div {
+  margin-bottom: 1rem;
 }

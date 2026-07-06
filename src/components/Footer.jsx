@@ -12,6 +12,9 @@ const Footer = () => {
           <h3>Let's Connect</h3>
           <p>Click the Link contact info.</p>
           <button>Scan QR Code</button>
+          <div>
+            <a href="#">https://rice-office.vercel.app</a>
+          </div>
           <div className={styles.socials}>
             <a href="www.google.com" target="_blank">
               <img src={email} alt="email" />
