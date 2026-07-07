@@ -4,15 +4,15 @@ import styles from "./About.module.css";
 const content = [
   {
     summary: "Research Director Profile",
-    details: "Empty 1",
+    details: "Empty 01",
   },
   {
     summary: "Academic Excellence",
-    details: "Empty 2",
+    details: "Empty 02",
   },
   {
     summary: "Doctoral Achievements",
-    details: "Empty 3",
+    details: "Empty 03",
   },
 ];
 
