@@ -95,6 +95,7 @@
   border-radius: 0.5rem;
   cursor: pointer;
   margin-bottom: 1rem;
+  font-family: inherit;
 }
 
 .vmuf {
