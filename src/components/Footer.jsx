@@ -5,13 +5,21 @@ import linkedin from "../assets/linkedin.svg";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
+  const handleDownload = () => {
+    alert("Your download is starting...");
+    const link = document.createElement("a");
+    link.href = "/Businesscard.png";
+    link.download = "Businesscard.png";
+    link.click();
+  };
+
   return (
     <section className={styles.footer}>
       <div className={styles.card}>
         <div className={styles.connectL}>
           <h3>Let's Connect</h3>
           <p>Click the Link to download contact info.</p>
-          <button>Download info.</button>
+          <button onClick={() => handleDownload()}>Download info.</button>
           <div>
             <a href="https://rice-office.netlify.app" target="_blank">
               https://rice-office.netlify.app
