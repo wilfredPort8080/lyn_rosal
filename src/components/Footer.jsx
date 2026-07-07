@@ -26,7 +26,10 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.socials}>
-            <a href="www.google.com" target="_blank">
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCHrfSjDVPnBfmKlfQNJrcKZtcXHkGnJmdjbnGvMWzGDGcjgzCdTgprskDdZdPJnnqdPphHg"
+              target="_blank"
+            >
               <img src={email} alt="email" />
             </a>
             <a href="https://facebook.com/lynrosal" target="_blank">
