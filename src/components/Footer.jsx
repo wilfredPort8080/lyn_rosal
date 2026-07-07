@@ -18,7 +18,7 @@ const Footer = () => {
       <div className={styles.card}>
         <div className={styles.connectL}>
           <h3>Let's Connect</h3>
-          <p>Click the Link to download contact info.</p>
+          <p>Click the Button to download contact info.</p>
           <button onClick={() => handleDownload()}>Download info.</button>
           <div>
             <a href="https://rice-office.netlify.app" target="_blank">
