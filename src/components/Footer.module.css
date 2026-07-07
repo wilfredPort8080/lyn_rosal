@@ -96,10 +96,12 @@
   cursor: pointer;
   margin-bottom: 1rem;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .vmuf {
   width: 12rem;
+  cursor: pointer;
 }
 
 .connectL div a:visited,

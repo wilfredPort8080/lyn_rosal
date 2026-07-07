@@ -41,7 +41,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="connect-right">
-          <img src={vmuf} alt="vmuf logo" className={styles.vmuf} />
+          <a href="https://vmuf.edu.ph/" target="_blank">
+            <img src={vmuf} alt="vmuf logo" className={styles.vmuf} />
+          </a>
         </div>
       </div>
     </section>

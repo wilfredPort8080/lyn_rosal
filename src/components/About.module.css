@@ -76,6 +76,7 @@
   border-top: 1px solid rgba(95, 213, 111, 1);
   color: #0077cc;
   transition: all 0.7s;
+  cursor: pointer;
 }
 
 .btnAbout button::after {
