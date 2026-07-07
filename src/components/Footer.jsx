@@ -13,7 +13,9 @@ const Footer = () => {
           <p>Click the Link contact info.</p>
           <button>Scan QR Code</button>
           <div>
-            <a href="#">https://rice-office.netlify.app</a>
+            <a href="https://rice-office.netlify.app" target="_blank">
+              https://rice-office.netlify.app
+            </a>
           </div>
           <div className={styles.socials}>
             <a href="www.google.com" target="_blank">

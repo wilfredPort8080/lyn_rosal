@@ -3,7 +3,8 @@ $bp-largest: 75em; //1200px
 $bp-large: 68.75em; //1100px
 $bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; // 600px
-$bp-smallest: 31.25em; // 500px */
+$bp-smallest: 31.25em; // 500px 
+$bp-tiny: 25em;// 400px*/
 
 :root {
   --bp-largest: 75em;
@@ -11,6 +12,7 @@ $bp-smallest: 31.25em; // 500px */
   --bp-medium: 56.25em;
   --bp-small: 37.5em;
   --bp-smallest: 31.25em;
+  --bp-tiny: 25em;
 }
 
 *,
@@ -70,6 +72,7 @@ body.dark-mode span {
   border: 1px solid rgba(95, 213, 111, 0.6);
   color: #0077cc;
   border-radius: 7px;
+  z-index: 10000;
 }
 
 main {
